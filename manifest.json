@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Video Seeking Everywhere",
+  "version": "1.0.0",
+  "description": "Allows you to seek through any playing video on most websites using the < or > keys.",
+  "icons": {
+    "48": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "browser-polyfill.min.js",
+        "contentscript.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "video-seeking-everywhere.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@video-seeking-everywhere",
+      "strict_min_version": "109.0"
+    }
+  }
+}
