@@ -1,7 +1,7 @@
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L0BR8QG)
 
 # Video Seeking Everywhere
-_A [Firefox](https://addons.mozilla.org/en-US/firefox/addon/video-seeking-everywhere/) extension that allows you to seek through any playing video on most websites using the < or > keys._
+_A [Firefox](https://addons.mozilla.org/en-US/firefox/addon/video-seeking-everywhere/) and [Chrome](https://chrome.google.com/webstore/detail/video-seeking-everywhere/neghkknngmcflfpmmojpkadkjkabbofa) extension that allows you to seek through any playing video on most websites using the < or > keys._
 
 - Use <kbd><</kbd> or <kbd>,</kbd> to rewind with 5 seconds
 - Use <kbd>></kbd> or <kbd>.</kbd> to seek forward with 5 seconds
