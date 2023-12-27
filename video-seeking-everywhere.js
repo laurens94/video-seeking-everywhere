@@ -7,12 +7,10 @@ const config = {
 };
 
 function onSeek(e) {
-  if (document.activeElement.tagName == "INPUT" || document.activeElement.tagName == "TEXTAREA"
-    || document.activeElement.tagName == "SELECT") {
+  if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName)) {
     return;
   }
-  const players = [...document.querySelectorAll('video')].filter(vid => !vid.paused);
-  players.forEach((player) => {
+  [...document.querySelectorAll('video')].filter(vid => !vid.paused).forEach((player) => {
     if (player) {
       switch (e.key) {
         case '<':
@@ -30,5 +28,4 @@ function onSeek(e) {
   });
 }
 
-// Listen to keydown events:
 document.addEventListener('keydown', onSeek);
