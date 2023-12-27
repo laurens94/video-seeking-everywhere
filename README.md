@@ -12,13 +12,13 @@ _A [Firefox](https://addons.mozilla.org/en-US/firefox/addon/video-seeking-everyw
 Please feel free to contribute by sending a Pull Request.
 
 ### Dependencies
-You can either use `npm` or `pnpm` with the commands below or run `web-ext` directly:
+You can use `npm` with the commands below or run `web-ext` directly:
 
 ### Running the extension
-`pnpx web-ext run`
+`npx web-ext run`
 
 ### Building
-`pnpx web-ext build`
+`npx web-ext build`
 
 ## Reference
 See https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/ for information about the `web-ext` command.

@@ -8,8 +8,9 @@ const config = {
 
 function onSeek(e) {
   if (document.activeElement.tagName == "INPUT" || document.activeElement.tagName == "TEXTAREA"
-    || document.activeElement.tagName == "SELECT")
+    || document.activeElement.tagName == "SELECT") {
     return;
+  }
   const players = [...document.querySelectorAll('video')].filter(vid => !vid.paused);
   players.forEach((player) => {
     if (player) {
